@@ -1,0 +1,184 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  font-family: "Roboto", sans-serif;
+}
+:root {
+  --backGround-color: #f0f0ff;
+  --transtion-Build: 0.7s;
+}
+a {
+  text-decoration: none;
+}
+/* Start header */
+.header {
+  width: 100%;
+  display: flex;
+  position: fixed;
+  z-index: 999;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 200px;
+  background-color: var(--backGround-color);
+}
+
+.logo {
+  font-weight: 700;
+  font-size: 1.8em;
+  color: blueviolet;
+  text-transform: uppercase;
+}
+nav a {
+  padding-left: 15px;
+  font-weight: 500;
+  font-size: 1em;
+}
+nav a:hover {
+  color: #5b12a0;
+}
+/* end header */
+/* Start main */
+section {
+  padding: 100px 200px;
+}
+.main {
+  width: 100%;
+  height: 100vh;
+  background-image: url(image/banner.jpg);
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+.main .logo-p {
+  width: 200px;
+  border-radius: 50%;
+  position: absolute;
+  bottom: 50%;
+  right: 300px;
+  transform: translateY(50%);
+  animation: ene 1.6s linear forwards;
+}
+
+.main h2 {
+  color: var(--backGround-color);
+}
+.main h2 span {
+  font-size: 1em;
+  color: #8e33e4;
+  font-size: 2em;
+  font-weight: 700;
+  display: inline-block;
+  margin-top: 10px;
+}
+.main h3 {
+  color: var(--backGround-color);
+  margin: 5px 0 15px;
+  font-size: 15px;
+}
+ .btn {
+  padding: 10px 40px;
+  color: white;
+  font-size: 1.2em;
+  font-weight: 700;
+  letter-spacing: 1px;
+  display: inline-block;
+  margin-bottom: 30px;
+  border-radius: 15px 0 15px 0;
+  background-image: linear-gradient(45deg, #5b12a0, #8e33e4);
+  transition: var(--transtion-Build) ease;
+}
+.btn:hover {
+  transform: scale(1.1);
+  background-image: linear-gradient(45deg, #8e33e4, #5b12a0);
+}
+.main .social i {
+  color: white;
+  font-size: 30px;
+  margin-right: 20px;
+}
+
+.s-log {
+  font-size: 2.2em;
+  display: flex;
+  justify-content: center;
+  font-weight: bold;
+  margin-bottom: 40px;
+  color: #5b12a0;
+}
+.content {
+  display: flex;
+  flex-direction: row;
+justify-content: center;
+  flex-wrap: wrap;
+}
+.server .content .card {
+  margin: 15px;
+  padding: 25px;
+  box-shadow: 0 5px 15px rgb(0 0 0 /20%);
+  width: 300px;
+  transition: var(--transtion-Build);
+}
+.server .card:hover {
+  transform: scale(1.1);
+}
+.server h3 {
+  font-size: 16px;
+    margin: 10px 0;
+}
+.server .icon {
+  font-size: 5.3em;
+  margin: 20px 0;
+  color: #5b12a0;
+  text-align: center;
+}
+/* end main */
+/* Start landing */
+.project{
+  background-color: #090909;
+}
+.project .cards-pro {
+  border: solid 2px #5b12a0;
+  border-radius: 5px;
+  background-color: white;
+  min-height: 260px;
+  margin: 10px;
+}
+.project .images img {
+  width: 100%;
+}
+.project .info {
+  padding: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.project .btn {
+  padding: 10px 20px;
+  font-size: 1em;
+}
+.footer {
+  background-color: #5b12a0;
+  color: white;
+  text-align: center;
+  font-size: 1.2em;
+  letter-spacing: 1px;
+  bottom: 0;
+  padding: 10px;
+}
+/* end landing */
+
+@keyframes ene {
+  100% {
+    transform: translateY(50%);
+    opacity: 1;
+  }
+  0% {
+    transform: translateY(0%);
+    opacity: 0;
+  }
+}
